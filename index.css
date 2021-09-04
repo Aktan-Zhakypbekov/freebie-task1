@@ -1,0 +1,908 @@
+button {
+    font-family: sans-serif;
+  }
+  .mainContainer {
+    font-family: sans-serif;
+    height: 3913px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 116px 3387px 410px;
+  }
+  .header {
+    background-color: #fafafa;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "cont1 cont2 cont3";
+  }
+  .websiteLogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Homemade Apple", cursive;
+    font-size: 18px;
+    grid-area: cont1;
+  }
+  .navLinksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cont2;
+  }
+  .navLinksContainer2 {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navLink {
+    text-decoration: none;
+    color: #000000;
+  }
+  .giftFinderButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cont3;
+  }
+  .giftFinderButton {
+    border: 1px solid #f7941e;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #f7941e;
+    width: 150px;
+    height: 43px;
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    .header {
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+    .websiteLogoContainer {
+      font-size: 30px;
+    }
+    .navLinksContainer {
+    }
+    .navLinksContainer2 {
+      width: 600px;
+    }
+    .navLink {
+      font-size: 25px;
+    }
+    .giftFinderButton {
+      width: 240px;
+      height: 75px;
+      border: 2px solid #f7941e;
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 425px) {
+    .header {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "cont1 cont3"
+        "cont2 cont2";
+    }
+    .websiteLogoContainer {
+      font-size: 58px;
+    }
+    .navLinksContainer2 {
+      width: 1000px;
+      height: 100px;
+    }
+    .navLink {
+      font-size: 50px;
+    }
+    .giftFinderButton {
+      width: 500px;
+      height: 140px;
+      font-size: 52px;
+      border: 4px solid #f7941e;
+      border-radius: 10px;
+    }
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 600px 820px 240px 1027px;
+  }
+  .findGiftsContainer {
+    background-color: #f1f1f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "content1 content2";
+  }
+  .findGiftsContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: content1;
+  }
+  .findGiftsImageContainer {
+    grid-area: content2;
+  }
+  
+  .findGiftsContent {
+    width: 433px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .findGiftsText1 {
+    font-size: 56px;
+  }
+  .findGiftsText2 {
+    font-size: 20px;
+    width: 420px;
+  }
+  .findGiftsButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .findGiftsButton {
+    width: 200px;
+    height: 60px;
+    background: #f7941e;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  .findGiftsImage {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+  }
+  @media (max-width: 768px) {
+    .findGiftsContent {
+      width: 520px;
+      height: 500px;
+    }
+    .findGiftsText1 {
+      font-size: 64px;
+    }
+    .findGiftsText2 {
+      font-size: 38px;
+    }
+    .findGiftsButton {
+      width: 280px;
+      height: 90px;
+      font-size: 28px;
+    }
+  }
+  @media (max-width: 425px) {
+    .mainContainer {
+      grid-template-rows: 482px 12774px 1020px;
+    }
+    .main {
+      grid-template-rows: 2000px 2000px 2840px 1080px 4854px;
+    }
+    .findGiftsContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "content1"
+        "content2";
+    }
+    .findGiftsImage {
+      width: 100%;
+    }
+    .findGiftsContent {
+      width: 833px;
+      height: 840px;
+    }
+    .findGiftsText1 {
+      font-size: 100px;
+    }
+    .findGiftsText2 {
+      font-size: 67px;
+      width: 600px;
+    }
+    .findGiftsButton {
+      width: 600px;
+      height: 150px;
+      font-size: 58px;
+    }
+  }
+  .learnMoreContainer {
+    background-color: #f1f1f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "content3 content4";
+  }
+  .learnMoreImageContainer {
+    grid-area: content3;
+  }
+  .learnMoreContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: content4;
+  }
+  .learnMoreContent {
+    width: 441px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .learnMoreText1 {
+    font-size: 32px;
+  }
+  .learnMoreText2 {
+    font-size: 20px;
+    width: 420px;
+  }
+  .learnMoreButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .learnMoreButton {
+    width: 200px;
+    height: 60px;
+    border: 1px solid #f7941e;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #f1f1f2;
+    color: #f7941e;
+    font-size: 18px;
+  }
+  .learnMoreImage {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+  }
+  @media (max-width: 768px) {
+    .learnMoreContent {
+      width: 540px;
+      height: 500px;
+    }
+    .learnMoreText1 {
+      font-size: 54px;
+    }
+    .learnMoreText2 {
+      font-size: 32px;
+      width: 530px;
+    }
+    .learnMoreButton {
+      width: 280px;
+      height: 90px;
+      font-size: 28px;
+      border: 2px solid #f7941e;
+    }
+  }
+  @media (max-width: 425px) {
+    .learnMoreContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "content3"
+        "content4";
+    }
+    .learnMoreImage {
+      width: 100%;
+      height: 100px;
+    }
+    .learnMoreContent {
+      width: 850px;
+      height: 870px;
+      justify-content: space-between;
+    }
+    .learnMoreText1 {
+      font-size: 86px;
+    }
+    .learnMoreText2 {
+      font-size: 63px;
+      width: 1000px;
+    }
+    .learnMoreButton {
+      width: 600px;
+      height: 150px;
+      font-size: 58px;
+      border: 4px solid #f7941e;
+      border-radius: 10px;
+    }
+  }
+  .giftExamplesContainer {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .giftExamplesContentContainer {
+    width: 1300px;
+    height: 630px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 5fr;
+  }
+  .giftExamplesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+  }
+  .giftExamplesQuote {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+  }
+  .giftExamplesItemsContainer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: space-around;
+    grid-template-areas: "content5 content6 content7 content8";
+  }
+  .giftExamplesItem {
+    display: grid;
+    grid-template-rows: 270px 1fr;
+    grid-template-columns: 1fr;
+  }
+  .gift1 {
+    grid-area: content5;
+  }
+  .gift2 {
+    grid-area: content6;
+  }
+  .gift3 {
+    grid-area: content7;
+  }
+  .gift4 {
+    grid-area: content8;
+  }
+  .giftExamplesItemImage {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+  }
+  .giftExamplesItemInfoContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: #fafafa;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+  }
+  .giftCategoryContainer {
+    font-size: 20px;
+  }
+  .seeMoreLinkContainer {
+    font-size: 14px;
+  }
+  .giftCategory {
+    width: 220px;
+    margin-top: 24px;
+    margin-left: 24px;
+  }
+  .seeMoreLink {
+    width: 70px;
+    margin-top: 50px;
+    margin-left: 24px;
+  }
+  @media (max-width: 768px) {
+    .giftExamplesTitle {
+      font-size: 54px;
+    }
+    .giftExamplesQuote {
+      font-size: 32px;
+    }
+    .giftCategory {
+      font-size: 32px;
+    }
+    .seeMoreLink {
+      font-size: 24px;
+      width: 140px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .giftExamplesContentContainer {
+      height: 2600px;
+      grid-template-rows: 1fr 1fr 9fr;
+    }
+    .giftExamplesItemsContainer {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "content5 content6"
+        "content7 content8";
+    }
+    .giftExamplesTitle {
+      font-size: 100px;
+    }
+    .giftExamplesQuote {
+      font-size: 60px;
+      text-align: center;
+    }
+    .giftExamplesItem {
+      grid-template-rows: 2fr 1fr;
+    }
+    .giftCategory {
+      font-size: 72px;
+      width: 500px;
+    }
+    .seeMoreLink {
+      width: 300px;
+      font-size: 58px;
+    }
+  }
+  
+  .signUpContainer {
+    background-color: #f7941e;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "content9 content10";
+  }
+  .signUpMessageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: content9;
+  }
+  .signUpMessageText1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .signUpMessageText2 {
+    font-size: 32px;
+  }
+  .howItWorksButtonContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: content10;
+  }
+  .findGiftNowButton {
+    width: 200px;
+    height: 50px;
+    background: #231f20;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 55px;
+  }
+  .howItWorksButton {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #f7941e;
+    margin-left: 16px;
+  }
+  @media (max-width: 768px) {
+    .findGiftNowButton {
+      width: 280px;
+      height: 90px;
+      font-size: 28px;
+    }
+    .howItWorksButton {
+      width: 280px;
+      height: 90px;
+      font-size: 28px;
+      border: 2px solid #000000;
+    }
+    .signUpMessageText1 {
+      font-size: 42px;
+    }
+    .signUpMessageText2 {
+      font-size: 42px;
+    }
+  }
+  @media (max-width: 425px) {
+    .signUpContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "content9"
+        "content10";
+    }
+    .signUpMessageText1 {
+      font-size: 86px;
+    }
+    .signUpMessageText2 {
+      font-size: 86px;
+    }
+    .howItWorksButtonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .findGiftNowButton {
+      margin-left: 0px;
+      width: 600px;
+      height: 200px;
+      font-size: 58px;
+    }
+    .howItWorksButton {
+      width: 600px;
+      height: 200px;
+      font-size: 58px;
+      border: 4px solid #000000;
+      border-radius: 10px;
+    }
+  }
+  
+  .blogsContainer {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blogContentContainer {
+    width: 1200px;
+    height: 880px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 370px 370px;
+  }
+  .blogTitleNQuote {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .blogTitle {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blogQuote {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .blogPoster {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 400px 1fr;
+    grid-template-areas: "content11 content12";
+  }
+  .blogImage {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+  }
+  .blogPosterTextContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    background-color: #231f20;
+  }
+  .blogPosterTextContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+  .blogPosterAuthor {
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100px;
+    height: 20px;
+  }
+  .blogPosterTitle {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 48px;
+    width: 500px;
+    height: 130px;
+  }
+  .blogPosterReadMore {
+    margin-top: 30px;
+    font-size: 18px;
+    width: 100px;
+    height: 30px;
+  }
+  .blogArticlesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blogArticle {
+    width: 570px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+  }
+  .blogArticleContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blogArticleTitle {
+    margin-bottom: 8px;
+    width: 470px;
+    height: 70px;
+    font-size: 24px;
+  }
+  .blogArticleText {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 470px;
+    height: 75px;
+    font-size: 18px;
+  }
+  .blogArticleReadMore {
+    margin-top: 8px;
+    width: 90px;
+    height: 20px;
+    font-size: 14px;
+    align-self: flex-start;
+  }
+  .blogImageContainer {
+    grid-area: content11;
+  }
+  .blogPosterTextContainer {
+    grid-area: content12;
+  }
+  @media (max-width: 768px) {
+    .blogContentContainer {
+      grid-template-rows: 1fr 2fr 2fr;
+    }
+    .blogTitle {
+      font-size: 54px;
+    }
+    .blogQuote {
+      font-size: 32px;
+    }
+    .blogContentContainer {
+      height: 1000px;
+    }
+    .blogPosterAuthor {
+      width: 250px;
+      height: 40px;
+      font-size: 32px;
+    }
+    .blogPosterTitle {
+      width: 600px;
+      height: 160px;
+      font-size: 54px;
+    }
+    .blogPosterReadMore {
+      width: 250px;
+      height: 45px;
+      font-size: 24px;
+    }
+    .blogArticlesContainer {
+      justify-content: space-evenly;
+    }
+    .blogArticle {
+      height: 360px;
+    }
+    .blogArticleContentContainer {
+      width: 520px;
+      height: 340px;
+    }
+    .blogArticleTitle {
+      width: 520px;
+      height: 120px;
+      font-size: 39px;
+    }
+    .blogArticleText {
+      width: 520px;
+      height: 120px;
+      font-size: 28px;
+    }
+    .blogArticleReadMore {
+      width: 170px;
+      height: 40px;
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 425px) {
+    .blogContentContainer {
+      height: 4760px;
+      width: 1200px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 4fr 3fr;
+    }
+    .blogPoster {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "content11"
+        "content12";
+    }
+    .blogTitle {
+      font-size: 100px;
+    }
+    .blogQuote {
+      font-size: 60px;
+    }
+    .blogPosterTextContainer2 {
+      width: 1100px;
+      height: 1000px;
+    }
+    .blogPosterAuthor {
+      width: 700px;
+      height: 150px;
+      font-size: 64px;
+    }
+    .blogPosterTitle {
+      width: 800px;
+      height: 500px;
+      font-size: 100px;
+    }
+    .blogPosterReadMore {
+      width: 400px;
+      height: 104px;
+      font-size: 58px;
+    }
+    .blogArticlesContainer {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .blogArticle {
+      width: 1150px;
+      height: 860px;
+      justify-content: space-around;
+      align-content: space-around;
+    }
+    .blogArticleTitle {
+      font-size: 92px;
+      width: 1000px;
+      height: 340px;
+    }
+    .blogArticleText {
+      font-size: 60px;
+      width: 1000px;
+      height: 290px;
+    }
+    .blogArticleReadMore {
+      font-size: 56px;
+      width: 340px;
+      height: 80px;
+    }
+  }
+  
+  .footer {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .footerNavLinks {
+    width: 700px;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .footerNavLink {
+    text-decoration: none;
+    color: #000000;
+  }
+  .footerLogo {
+    font-family: "Homemade Apple", cursive;
+    color: #f7941e;
+  }
+  .line {
+    width: 1000px;
+    height: 1px;
+    background-color: black;
+  }
+  .socialMediaLinksContainer {
+    width: 400px;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .socialMediaLink {
+    width: 40px;
+    height: 40px;
+  }
+  .socialMediaLinkIcon {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .copyright {
+    width: 205px;
+    height: 25px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    .footerContent {
+      width: 1200px;
+    }
+    .line {
+      width: 1200px;
+    }
+    .footerNavLinks {
+      width: 900px;
+      height: 120px;
+    }
+    .footerNavLink {
+      font-size: 24px;
+    }
+    .footerLogo {
+      font-size: 26px;
+    }
+    .socialMediaLinksContainer {
+      width: 700px;
+      height: 120px;
+    }
+    .socialMediaLink {
+      width: 70px;
+      height: 70px;
+    }
+    .copyright {
+      width: 350px;
+      height: 50px;
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 425px) {
+    .footerContent {
+      width: 1200px;
+      height: 940px;
+    }
+    .footerNavLinks {
+      width: 1200px;
+      height: 350px;
+    }
+    .footerNavLink {
+      font-size: 50px;
+    }
+    .footerLogo {
+      font-size: 52px;
+    }
+    .socialMediaLinksContainer {
+      width: 1000px;
+      height: 350px;
+    }
+    .socialMediaLink {
+      width: 130px;
+      height: 130px;
+    }
+    .copyright {
+      width: 700px;
+      height: 90px;
+      font-size: 46px;
+    }
+  }
+  
